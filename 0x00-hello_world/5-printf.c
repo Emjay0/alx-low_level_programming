@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*Description: using the main function 
-*main - prints the string in the func
+*main:print the string in the function
+*Description:using the main function
 *this programm prints with proper grammar
 *but the outcome is a piece of art
 *Return:0
