@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *print_alphabet - function to print abc
-*Description: programm datprints the alphabet, in lowercase followed by newline
+*
 *Return: 0
 */
 void print_alphabet(void)
@@ -12,5 +12,5 @@ void print_alphabet(void)
 	{
 		_putchar(d);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
