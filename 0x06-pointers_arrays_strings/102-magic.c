@@ -1,4 +1,9 @@
 #include <stdio.h>
+/*
+*main-prints the main fuction
+*
+*Return:returns p
+*/
 
 int main(void)
 {
@@ -17,7 +22,7 @@ int main(void)
 *-you are not allowed to code anything else than this line of code
 */
 	*(p + 5) = 98;
-/*this prints 98\n */
+/*...so this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
