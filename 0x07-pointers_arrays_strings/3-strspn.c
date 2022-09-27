@@ -8,23 +8,24 @@
 *Return: return new string
 */
 
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int sum = 0;
-	char *ptr = accept;
+	unsigned int n = 0;
+	int r;
 
-	while (*s != 0)
+	while (*s)
 	{
-		if (*s == *ptr && *ptr != 0)
+		for (r = 0; accept[r]; r++)
 		{
-			sum++;
-			s++;
-			ptr = accept;
+			if (*s = accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
 		}
-		else
-			ptr++;
-		if (*ptr == 0)
-		return (sum);
+		s++;
 	}
-	return (sum);
+	return (n);
 }
