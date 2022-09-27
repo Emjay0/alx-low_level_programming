@@ -10,17 +10,21 @@
 
 unsigned int _strspn(char *s, char *accept);
 {
-	unsigned int i, j;
+	unsigned int sum = 0;
+	char *ptr = accept;
 
-	for (j = 0; *(s + j); j++;)
+	while (*s != 0)
 	{
-		for (i = 0; *(accept + i); i++;)
+		if (*s == *ptr && *ptr != 0)
 		{
-			if (*(s + j) == *(accept + i)
-			break;
+			sum++;
+			s++;
+			ptr = accept;
 		}
-	if (*(accept + i) == '\0')
-	break;
+		else
+			ptr++;
+		if (*ptr == 0)
+		return (sum);
 	}
-	return (j);
+	return (sum);
 }
